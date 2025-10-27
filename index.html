@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akintoye John — Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Boxicons (icons for social & menu) -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================
+       HEADER (sticky + blur)
+       ========================= -->
+  <header class="header" id="header" role="banner">
+    <div class="container header-inner">
+      <a href="#home" class="logo">John.</a>
+
+      <!-- mobile hamburger -->
+      <button class="nav-toggle" aria-label="Open navigation" id="navToggle">
+        <i class='bx bx-menu'></i>
+      </button>
+
+      <nav class="navbar" id="navbar" role="navigation" aria-label="Primary">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================
+       HOME / HERO
+       ========================= -->
+  <main>
+    <section class="home" id="home" aria-label="Home">
+      <!-- dedicated overlay element (keeps overlay colors consistent) -->
+      <div class="home-overlay" aria-hidden="true"></div>
+
+      <div class="home-content container">
+        <!-- Use data-delay to control stagger (JS/ CSS reads it) -->
+        <h1 class="reveal-safe" data-delay="1">Hi, I'm <span class="accent-name">Akintoye John</span></h1>
+
+        <!-- typing target -->
+        <h3 class="typing reveal-safe" data-delay="2">
+          <span id="typing-target" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span>
+        </h3>
+
+        <p class="reveal-safe" data-delay="3">
+          A passionate and dedicated Frontend Developer on a journey to master the art of building
+          beautiful, responsive, and functional websites. I enjoy turning ideas into clean,
+          interactive web experiences using HTML, CSS, and JavaScript.
+        </p>
+
+        <div class="btn-box reveal-safe" data-delay="4">
+          <a class="btn primary" href="#contact">Hire Me</a>
+          <a class="btn outline" href="#portfolio">Let's Talk</a>
+        </div>
+      </div>
+
+      <!-- social icons -->
+      <div class="home-sci" aria-hidden="true">
+        <a href="https://www.facebook.com/ayomide.john.904" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
+        <a href="https://x.com/thatweb_dev_guy" target="_blank" rel="noopener noreferrer"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.linkedin.com/in/dms-exe-25a41a36a" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+      </div>
+
+      <!-- decorative hover area (right side) -->
+      <span class="home-imgHover" aria-hidden="true"></span>
+    </section>
+
+    <!-- =========================
+         ABOUT
+         ========================= -->
+    <section class="section about" id="about" aria-label="About">
+      <div class="container">
+        <h2 class="section-title reveal-safe" data-delay="1">About Me</h2>
+        <p class="reveal-safe" data-delay="2">
+          I started learning web development because I love creating things that solve real problems.
+          I specialize in frontend development — building responsive interfaces and smooth user experiences.
+        </p>
+
+        <div class="two-cols">
+          <div class="card reveal-safe" data-delay="3">
+            <h4>Experience</h4>
+            <p>Worked on school projects and personal websites; learning best practices and building a portfolio.</p>
+          </div>
+
+          <div class="card reveal-safe" data-delay="4">
+            <h4>Tools</h4>
+            <p>HTML, CSS, JavaScript, Git — always learning more (React next).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SERVICES
+         ========================= -->
+    <section class="section services" id="services" aria-label="Services">
+      <div class="container">
+        <h2 class="section-title reveal-safe" data-delay="1">Services</h2>
+
+        <div class="grid">
+          <div class="service-card reveal-safe" data-delay="2">
+            <i class='bx bx-code-alt service-icon'></i>
+            <h4>Frontend Development</h4>
+            <p>Responsive websites with clean code and accessibility in mind.</p>
+          </div>
+
+          <div class="service-card reveal-safe" data-delay="3">
+            <i class='bx bx-paint service-icon'></i>
+            <h4>UI Design</h4>
+            <p>Simple and modern UI mockups and prototypes.</p>
+          </div>
+
+          <div class="service-card reveal-safe" data-delay="4">
+            <i class='bx bx-rocket service-icon'></i>
+            <h4>Optimization</h4>
+            <p>Performance improvements and quality assurance for web projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PORTFOLIO
+         ========================= -->
+    <section class="section portfolio" id="portfolio" aria-label="Portfolio">
+      <div class="container">
+        <h2 class="section-title reveal-safe" data-delay="1">Portfolio</h2>
+        <p class="reveal-safe" data-delay="2">Some projects I built</p>
+
+        <div class="grid projects">
+          <article class="project reveal-safe" data-delay="3">
+            <div class="project-img" aria-hidden="true"></div>
+            <h4>Project One</h4>
+            <p>Landing page built with HTML & CSS.</p>
+            <a href="https://tony12-png.github.io/Login/" >View Project</a>
+          </article>
+
+          <article class="project reveal-safe" data-delay="4">
+            <div class="project-img" aria-hidden="true"></div>
+            <h4>Project Two</h4>
+            <p>Interactive UI with JavaScript components.</p>
+            <a href="https://tony12-png.github.io/xen/" >View Project</a>
+          </article>
+
+          <article class="project reveal-safe" data-delay="5">
+            <div class="project-img" aria-hidden="true"></div>
+            <h4>Project Three</h4>
+            <p>Responsive dashboard concept.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT
+         ========================= -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <h2 class="section-title reveal-safe" data-delay="1">Contact</h2>
+
+        <div class="contact-grid">
+          <form class="contact-form reveal-safe" data-delay="2">
+            <label>
+              <span>Name</span>
+              <input type="text" placeholder="Your name" required>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" placeholder="your@email.com" required>
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea rows="5" placeholder="Write a short message"></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+
+          <div class="contact-info reveal-safe" data-delay="3">
+            <h4>Let's connect</h4>
+            <p>Email: <a href="mailto:youremail@example.com">ayomideakintoye306@gmail.com</a></p>
+            <p>Location: Osun State, Nigeria</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Akintoye John | Built with ❤️</p>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="app.js"></script>
+</body>
+</html>
